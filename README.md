@@ -1,18 +1,30 @@
-## 문구 쇼핑몰 웹사이트 '사달라'
+# 문구 쇼핑몰 웹사이트 '사달라'
 
-블로그를 자주 찾는 연령층 10대에서 20대 초중반의 기호/트렌드에 맞는 상품을 찾아 소개 및 판매하는 Next.js와 Emotion으로 구현한 문구 쇼핑몰 프로젝트
+---
+
+<img width="324" alt="logo" src="https://github.com/jungyeon-rgb/shoppingmall-website/assets/119380048/5c15541c-4d9d-44bd-8f77-61901e419c65">
+
+문구류를 가장 많이 사용하는 연령층인 10대에서 20대 초중반의 기호/트렌드에 맞는 상품을 찾아 판매 및 소개하는 Next.js와 Emotion으로 구현한 문구 쇼핑몰 프로젝트
 
 ## 프로젝트 정보
 
-> 엘리스 IoT 1기 웹 프로젝트
-> 개발 기간 : 23/2/13~23/3/3(3주)
-> 프론트엔드 2명, 백엔드 2명
+---
 
-## 프론트엔드 서버 :
+> 엘리스 IoT 1기 웹 프로젝트 <br />
+> 개발 기간 : 23/2/13~23/3/3(3주) <br />
+> 프론트엔드 2명, 백엔드 2명 <br />
+
+## 배포주소
+
+---
+
+> 프론트엔드 배포 주소 : shoppingmall-website.vercel.app
 
 ## 시작 가이드
 
-Requirements
+---
+
+**Requirements**
 
 For building and running the application you need:
 
@@ -39,6 +51,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ##
 
 ## Commit Convention
+
+---
 
 | 태그이름   | 설명                                                              |
 | ---------- | ----------------------------------------------------------------- |
