@@ -16,7 +16,8 @@
 
 ### 🦖 배포주소
 ---
-> 프론트엔드 배포 주소 : [shoppingmall-website.vercel.app](shoppingmall-website.vercel.app)
+> 프론트엔드 배포 주소 : [shoppingmall-website.vercel.app](shoppingmall-website.vercel.app) <br />
+> 백엔드 배포 주소 : [http://34.64.140.26:3000](http://34.64.140.26:3000)
 
 <br />
 
