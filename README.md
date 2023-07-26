@@ -7,59 +7,58 @@
 👉🏻 [발표 ppt 보러가기](https://docs.google.com/presentation/d/1dMPrAd3uzM6X3K7LvfefNNQJpVJBHtwlhd1nhc8rK_Y/edit#slide=id.g1f5e3922c35_0_0)
 <br />
 <br />
-### 🦖 프로젝트 정보
----
+## 🦖 프로젝트 정보
 > - 엘리스 IoT 1기 웹 프로젝트 <br />
 > - 개발 기간 : 23/2/13~23/3/3(3주) <br />
 > - 프론트엔드 2명, 백엔드 2명 <br />
 
-### 🦖 스택
----
-**Environment**
+<br />
+
+## 🦖 스택
+### Environment
 
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=Visual%20Studio%20Code&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white)
 
-**Config**
+### Config
 
 ![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)   
 
-**Development**
+### Development
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=Next.js&logoColor=white)
 ![Emotion](https://img.shields.io/badge/Emotion-DB7093?style=for-the-badge&logo=Emotion&logoColor=white)
 
-**Comunication**
+### Comunication
 
 ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white)
 
 <br />
 
-### 🦖 배포주소
----
+## 🦖 배포주소
 > 프론트엔드 배포 주소 : [shoppingmall-website.vercel.app](shoppingmall-website.vercel.app) <br />
 > 백엔드 배포 주소 : [http://34.64.140.26:3000](http://34.64.140.26:3000)
 
 <br />
 
-### 🦖 시작 가이드
----
-**Requirements**
+## 🦖 시작 가이드
+
+### Requirements
 
 For building and running the application you need:
 
 - [Node.js v16.13.0](https://nodejs.org/en/blog/release/v16.13.0)
 - Npm v8.1.0
 
-**Installation**
+### Installation
 
 ```
 $ git clone https://github.com/jungyeon-rgb/shoppingmall-website.git
 ```
 
-**Frontend**
+### Frontend
 
 ```
 $ npm install
@@ -70,8 +69,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 <br />
 
-### 🦖 Commit Convention
----
+## 🦖 Commit Convention
+
 | 태그이름   | 설명                                                              |
 | ---------- | ----------------------------------------------------------------- |
 | [CHORE]    | 코드 수정, 내부 파일 수정                                         |
