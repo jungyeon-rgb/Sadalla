@@ -1,8 +1,42 @@
-## 2조 쇼핑몰 웹페이지 프론트엔드 파트
+## 문구 쇼핑몰 웹사이트 '사달라'
 
-문구 쇼핑몰 제작
+블로그를 자주 찾는 연령층 10대에서 20대 초중반의 기호/트렌드에 맞는 상품을 찾아 소개 및 판매하는 Next.js와 Emotion으로 구현한 문구 쇼핑몰 프로젝트
 
+## 프로젝트 정보
 
+> 엘리스 IoT 1기 웹 프로젝트
+> 개발 기간 : 23/2/13~23/3/3(3주)
+> 프론트엔드 2명, 백엔드 2명
+
+## 프론트엔드 서버 :
+
+## 시작 가이드
+
+Requirements
+
+For building and running the application you need:
+
+- Node.js v16.13.0
+- Npm v8.1.0
+
+Installation
+
+```
+$ git clone https://github.com/jungyeon-rgb/shoppingmall-website.git
+```
+
+**Frontend**
+
+```
+$ npm install
+$ npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+---
+
+##
 
 ## Commit Convention
 
@@ -20,44 +54,3 @@
 | [HOTFIX]   | issue나 QA에서 급한 버그 수정에 사용                              |
 | [DOCS]     | README나 WIKI 등의 문서 개정                                      |
 | [CORRECT]  | 주로 문법의 오류나 타입의 변경, 이름 변경에 사용                  |
-
----
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.jsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
