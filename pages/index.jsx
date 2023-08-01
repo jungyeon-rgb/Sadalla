@@ -1,5 +1,5 @@
-import Link from "next/link";
-import Image from "next/image";
+import Link from 'next/link';
+import Image from 'next/image';
 import {
   HomeProductContentStyled,
   HomeProductImageDivStyled,
@@ -8,8 +8,8 @@ import {
   ImageContentColumnStyled,
   HomeProductEventCommentStyled,
   ImageContentColumnItemStyled,
-} from "@/pages/index.styles";
-import SwiperComponent from "@/components/Swiper/Swiper";
+} from '@/pages/index.styles';
+import SwiperComponent from '@/components/Swiper/Swiper';
 
 export default function Index() {
   return (

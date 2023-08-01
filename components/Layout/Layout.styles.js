@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const LayoutHeaderStyled = styled.header``;
 
@@ -38,12 +38,12 @@ export const LayoutHeaderNavLiStyled = styled.li`
 
   ::after {
     padding-left: 30px;
-    content: "｜";
+    content: '｜';
     color: #5555;
   }
 
   :last-child::after {
-    content: "";
+    content: '';
   }
 
   & > a {

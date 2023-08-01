@@ -1,5 +1,5 @@
-import { useRouter } from "next/router";
-import Image from "next/image";
+import { useRouter } from 'next/router';
+import Image from 'next/image';
 import {
   StyledProductAnchor,
   StyledProductContainer,
@@ -7,8 +7,8 @@ import {
   StyledProductPrice,
   StyledProductsContainer,
   StyledProductTitle,
-} from "@/pages/products/products.styles";
-import axios from "axios";
+} from '@/pages/products/products.styles';
+import axios from 'axios';
 
 export default function Products(props) {
   const { product } = props;
@@ -83,14 +83,14 @@ export async function getServerSideProps({ params }) {
     }
   } catch (err) {
     console.error(err.response);
-    const statusCode = err.response ? err.response.status : "에러발생";
+    const statusCode = err.response ? err.response.status : '에러발생';
     console.error(err.response);
     return {
       props: {
         product: null,
         error: {
           statusCode,
-          title: err.response ? err.response.status : "에러발생",
+          title: err.response ? err.response.status : '에러발생',
         },
       },
     };

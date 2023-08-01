@@ -1,5 +1,5 @@
-import styles from "@/styles/userInfo.module.css";
-import Checkbox from "@/components/forms/Checkbox";
+import styles from '@/styles/userInfo.module.css';
+import Checkbox from '@/components/forms/Checkbox';
 
 export default function userInfo() {
   return (

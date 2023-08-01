@@ -1,11 +1,11 @@
-import Link from "next/link";
+import Link from 'next/link';
 import {
   LayoutHeaderLogoStyled,
   LayoutHeaderNavLiStyled,
   LayoutHeaderNavStyled,
   LayoutHeaderNavUlStyled,
   LayoutHeaderStyled,
-} from "@/components/Layout/Layout.styles";
+} from '@/components/Layout/Layout.styles';
 
 export default function Layout({ children }) {
   return (

@@ -1,9 +1,9 @@
-import styles from "@/styles/myPage.module.css";
-import Link from "next/link";
-import React from "react";
-import Counter from "@/components/events/Counter";
-import Checkbox from "@/components/forms/Checkbox";
-import Image from "next/image";
+import styles from '@/styles/myPage.module.css';
+import Link from 'next/link';
+import React from 'react';
+import Counter from '@/components/events/Counter';
+import Checkbox from '@/components/forms/Checkbox';
+import Image from 'next/image';
 
 export default function myPage() {
   return (

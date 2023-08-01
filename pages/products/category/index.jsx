@@ -1,5 +1,5 @@
-import { useRouter } from "next/router";
-import Image from "next/image";
+import { useRouter } from 'next/router';
+import Image from 'next/image';
 import {
   StyledProductAnchor,
   StyledProductContainer,
@@ -7,9 +7,9 @@ import {
   StyledProductPrice,
   StyledProductsContainer,
   StyledProductTitle,
-} from "@/pages/products/products.styles";
-import axios from "axios";
-import { console } from "next/dist/compiled/@edge-runtime/primitives/console";
+} from '@/pages/products/products.styles';
+import axios from 'axios';
+import { console } from 'next/dist/compiled/@edge-runtime/primitives/console';
 
 export default function Products(props) {
   const { products } = props;
@@ -97,13 +97,13 @@ export async function getServerSideProps(context) {
   } catch (err) {
     console.error(err);
     console.error(err.response);
-    const statusCode = err.response ? err.response.status : "에러발생";
+    const statusCode = err.response ? err.response.status : '에러발생';
     return {
       props: {
         products: null,
         error: {
           statusCode,
-          title: err.response ? err.response.status : "에러발생",
+          title: err.response ? err.response.status : '에러발생',
         },
       },
     };

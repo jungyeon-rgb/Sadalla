@@ -1,5 +1,5 @@
-import styles from "@/styles/myPage.module.css";
-import Image from "next/image";
+import styles from '@/styles/myPage.module.css';
+import Image from 'next/image';
 
 export default function wishList() {
   return (

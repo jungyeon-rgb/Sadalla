@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { useRouter } from "next/router";
-import OrderList from "@/components/Order/order-context";
+import { useState } from 'react';
+import { useRouter } from 'next/router';
+import OrderList from '@/components/Order/order-context';
 import {
   OrderCompletedContainer,
   OrderCompletedTitle,
@@ -13,19 +13,19 @@ import {
   OrderInformationLabel,
   OrderInformationInput,
   OrderLookUpButton,
-} from "@/pages/order/order.styles";
+} from '@/pages/order/order.styles';
 
 export default function Order() {
   const [shippingInfo, setShippingInfo] = useState({
-    name: "",
-    address: "",
-    phoneNumber: "",
-    productId: "",
-    productName: "",
-    count: "",
-    price: "",
-    totalPrice: "",
-    zipcode: "",
+    name: '',
+    address: '',
+    phoneNumber: '',
+    productId: '',
+    productName: '',
+    count: '',
+    price: '',
+    totalPrice: '',
+    zipcode: '',
 
     //이렇게써도되나요
   });
@@ -47,7 +47,7 @@ export default function Order() {
   function handleOrderCancel(e) {
     e.preventDefault();
     setIsOrderNotCompleted(true);
-    router.push("../my-page");
+    router.push('../my-page');
     // 주문취소, 초기화로 변경이면 장바구니로 이동,,?
   }
 

@@ -1,21 +1,21 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import "@/components/Layout/Swiper";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import '@/components/Layout/Swiper';
 
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function SwiperComponent() {
   return (
     <Swiper
       // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y]}
-      direction={"horizontal"}
+      direction={'horizontal'}
       spaceBetween={50}
       slidesPerView={1}
       navigation
@@ -23,7 +23,7 @@ export default function SwiperComponent() {
       scrollbar={{ draggable: true }}
       loop
       onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
+      onSlideChange={() => console.log('slide change')}
       autoplay={{ delay: 2500, disableOnInteraction: false }}
     >
       <SwiperSlide>

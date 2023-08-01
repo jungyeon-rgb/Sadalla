@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
-import React, { useState, useEffect } from "react";
-import styled from "@emotion/styled";
+import Image from 'next/image';
+import Link from 'next/link';
+import React, { useState, useEffect } from 'react';
+import styled from '@emotion/styled';
 
 const CarouselContainer = styled.div`
   width: 100%;
