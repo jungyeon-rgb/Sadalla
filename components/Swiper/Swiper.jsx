@@ -5,7 +5,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import '@/components/Layout/Swiper';
 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -19,35 +18,39 @@ export default function SwiperComponent() {
       spaceBetween={50}
       slidesPerView={1}
       navigation
-      //      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
+      pagination={{ clickable: true }}
       loop
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
-      autoplay={{ delay: 2500, disableOnInteraction: false }}
+      autoplay={{ delay: 1000, disableOnInteraction: false }}
     >
       <SwiperSlide>
         <Link href="/products?category=pen">
-          <Image src="/img/swiper/pen.png" alt="펜" width={250} height={200} />
+          <Image
+            src="/img/swiper/Group2.png"
+            alt="펜"
+            width={1440}
+            height={484}
+          />
         </Link>
       </SwiperSlide>
       <SwiperSlide>
         <Link href="/products?category=postcard">
           <Image
-            src="/img/swiper/postcard.png"
+            src="/img/swiper/Group3.png"
             alt="엽서"
-            width={250}
-            height={200}
+            width={1440}
+            height={484}
           />
         </Link>
       </SwiperSlide>
       <SwiperSlide>
         <Link href="/products?category=sticker">
           <Image
-            src="/img/swiper/sticker.png"
+            src="/img/swiper/Group4.png"
             alt="스티커"
-            width={250}
-            height={200}
+            width={1440}
+            height={484}
           />
         </Link>
       </SwiperSlide>
@@ -56,8 +59,8 @@ export default function SwiperComponent() {
           <Image
             src="/img/swiper/notes.png"
             alt="노트"
-            width={250}
-            height={200}
+            width={1440}
+            height={484}
           />
         </Link>
       </SwiperSlide>

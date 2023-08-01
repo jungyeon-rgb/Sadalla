@@ -22,7 +22,7 @@ export default function Index() {
         </p>
       </HomeProductEventCommentStyled>
 
-      {/* <HomeProductContentStyled>
+      <HomeProductContentStyled>
         <ImageContentColumnStyled>
           <Link href="/products?category=watch">
             <Image
@@ -66,9 +66,9 @@ export default function Index() {
               width={200}
               height={200}
             />
-          </Link> 
+          </Link>
         </ImageContentColumnStyled>
-      </HomeProductContentStyled>*/}
+      </HomeProductContentStyled>
     </>
   );
 }

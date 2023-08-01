@@ -1,3 +1,4 @@
+// 로고, 헤더 컴포넌트
 import Link from 'next/link';
 import {
   LayoutHeaderLogoStyled,
