@@ -1,42 +1,46 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
+import React, { useState, useEffect } from "react";
+import styled from "@emotion/styled";
 
-import "swiper/css/bundle";
+const CarouselContainer = styled.div`
+  width: 100%;
+  overflow: hidden;
+`;
 
-export default function SwiperComponent() {
+const SlideWrapper = styled.div`
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+`;
+
+const Slide = styled.img`
+  width: 100%;
+`;
+
+const Carousel = ({ images }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const slideInterval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000); // 3초마다 이미지 변경
+
+    return () => {
+      clearInterval(slideInterval);
+    };
+  }, [images.length]);
+
   return (
-    <Swiper
-      modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-      spaceBetween={50}
-      slidesPerView={1}
-      //navigation
-      // pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      loop
-      autoplay={{ delay: 2000, pauseOnMouseEnter: true }}
-    >
-      <SwiperSlide>
-        <Link href="/products?category=pen">
-          <Image src="/img/swiper/pen.jpg" alt="펜" fill />
-        </Link>
-      </SwiperSlide>
-      <SwiperSlide>
-        <Link href="/products?category=postcard">
-          <Image src="/img/swiper/postcard.jpg" alt="엽서" fill />
-        </Link>
-      </SwiperSlide>
-      <SwiperSlide>
-        <Link href="/products?category=sticker">
-          <Image src="/img/swiper/sticker.jpg" alt="스티커" fill />
-        </Link>
-      </SwiperSlide>
-      <SwiperSlide>
-        <Link href="/products?category=watch">
-          <Image src="/img/swiper/watch.jpg" alt="시계" fill />
-        </Link>
-      </SwiperSlide>
-    </Swiper>
+    <CarouselContainer>
+      <SlideWrapper
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
+        {images.map((image, index) => (
+          <Slide key={index} src={image} alt={`Slide ${index + 1}`} />
+        ))}
+      </SlideWrapper>
+    </CarouselContainer>
   );
-}
+};
+
+export default Carousel;

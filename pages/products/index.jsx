@@ -18,7 +18,7 @@ export default function Products(props) {
   const handleProductClick = (e, targetUrl) => {
     e.preventDefault();
     router.push(
-      `${process.env.NEXT_PUBLIC_FETCH_BASEURL}/products/${targetUrl}`
+      `${process.env.NEXT_PUBLIC_FETCH_BASEURL}/products/${targetUrl}`,
     );
   };
 
@@ -62,7 +62,7 @@ export async function getServerSideProps({ params }) {
   //`${NEXT_PUBLIC_FETCH_BASEURL}/api/v1/products/${params.id}}`
   try {
     const result = await axios.get(
-      `${process.env.NEXT_PUBLIC_FETCH_BASEURL}/api/v1/products`
+      `${process.env.NEXT_PUBLIC_FETCH_BASEURL}/api/v1/products`,
     );
     if (result.status === 200) {
       return {

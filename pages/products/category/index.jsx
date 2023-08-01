@@ -21,7 +21,7 @@ export default function Products(props) {
   const handleProductClick = (e, targetUrl) => {
     e.preventDefault();
     router.push(
-      `${process.env.NEXT_PUBLIC_FETCH_BASEURL}/api/v1/products?category=${targetUrl}`
+      `${process.env.NEXT_PUBLIC_FETCH_BASEURL}/api/v1/products?category=${targetUrl}`,
     );
     // 체크하기
   };
@@ -71,7 +71,7 @@ export async function getServerSideProps(context) {
 
   try {
     const result = await axios.get(
-      `${NEXT_PUBLIC_FETCH_BASEURL}/api/v1/products?category=${categoryValue}`
+      `${NEXT_PUBLIC_FETCH_BASEURL}/api/v1/products?category=${categoryValue}`,
     );
     console.log(result);
     if (result.status === 200) {

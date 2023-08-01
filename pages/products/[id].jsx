@@ -44,7 +44,7 @@ export async function getServerSideProps({ params }) {
     // );
 
     const result = await axios.get(
-      `${process.env.NEXT_PUBLIC_FETCH_BASEURL}/api/v1/products/${params.id}`
+      `${process.env.NEXT_PUBLIC_FETCH_BASEURL}/api/v1/products/${params.id}`,
     );
 
     if (result.status === 200) {
