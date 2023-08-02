@@ -5,7 +5,7 @@ const nextConfig = {
     emotion: true,
   },
   images: {
-    domains: ["picsum.photos", "ssl.pstatic.net", "localhost"],
+    domains: ['ssl.pstatic.net', 'localhost', 'http', '34.64.140.26'],
   },
 };
 

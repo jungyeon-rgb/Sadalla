@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const LayoutHeaderStyled = styled.header``;
 
@@ -6,7 +6,7 @@ export const LayoutHeaderLogoStyled = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px 0;
+  margin: 50px 0 0 0;
 
   & > a {
     text-decoration: none;
@@ -29,7 +29,6 @@ export const LayoutHeaderNavUlStyled = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px 0;
 `;
 
 export const LayoutHeaderNavLiStyled = styled.li`
@@ -38,12 +37,12 @@ export const LayoutHeaderNavLiStyled = styled.li`
 
   ::after {
     padding-left: 30px;
-    content: "｜";
+    content: '｜';
     color: #5555;
   }
 
   :last-child::after {
-    content: "";
+    content: '';
   }
 
   & > a {

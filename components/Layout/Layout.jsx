@@ -1,11 +1,12 @@
-import Link from "next/link";
+// 로고, 헤더 컴포넌트
+import Link from 'next/link';
 import {
   LayoutHeaderLogoStyled,
   LayoutHeaderNavLiStyled,
   LayoutHeaderNavStyled,
   LayoutHeaderNavUlStyled,
   LayoutHeaderStyled,
-} from "@/components/Layout/Layout.styles";
+} from '@/components/Layout/Layout.styles';
 
 export default function Layout({ children }) {
   return (

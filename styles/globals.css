@@ -33,13 +33,13 @@ li {
 
 * {
   box-sizing: border-box;
-  font-family: "Noto Sans KR", "Roboto", sans-serif;
+  font-family: 'Noto Sans KR', 'Roboto', sans-serif;
 }
 
 .swiper {
   width: 90%;
-  height: 550px;
-  margin-top: 100px;
+  height: 500px;
+  margin-bottom: 10px;
 }
 
 .swiper-slide {

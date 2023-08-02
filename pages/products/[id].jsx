@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
-import ProductContent from "@/components/Products/ProductContent/productContent";
-import axios from "axios";
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
+import ProductContent from '@/components/Products/ProductContent/productContent';
+import axios from 'axios';
 import {
   ProductContentToCartButton,
   StyledProductContainer,
-} from "@/pages/products/products.styles";
+} from '@/pages/products/products.styles';
 
 export default function PostDetailPage(props) {
   const { product, error } = props;
@@ -44,7 +44,7 @@ export async function getServerSideProps({ params }) {
     // );
 
     const result = await axios.get(
-      `${process.env.NEXT_PUBLIC_FETCH_BASEURL}/api/v1/products/${params.id}`
+      `${process.env.NEXT_PUBLIC_FETCH_BASEURL}/api/v1/products/${params.id}`,
     );
 
     if (result.status === 200) {
@@ -74,7 +74,7 @@ export async function getServerSideProps({ params }) {
           statusCode: err.response ? err.response.status : 500,
           title: err.response
             ? err.response.statusText
-            : "Internal Server Error",
+            : 'Internal Server Error',
         },
       },
     };

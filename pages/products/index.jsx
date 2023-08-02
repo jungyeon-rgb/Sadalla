@@ -1,5 +1,5 @@
-import { useRouter } from "next/router";
-import Image from "next/image";
+import { useRouter } from 'next/router';
+import Image from 'next/image';
 import {
   StyledProductAnchor,
   StyledProductContainer,
@@ -7,8 +7,8 @@ import {
   StyledProductPrice,
   StyledProductsContainer,
   StyledProductTitle,
-} from "@/pages/products/products.styles";
-import axios from "axios";
+} from '@/pages/products/products.styles';
+import axios from 'axios';
 
 export default function Products(props) {
   const { product } = props;
@@ -18,7 +18,7 @@ export default function Products(props) {
   const handleProductClick = (e, targetUrl) => {
     e.preventDefault();
     router.push(
-      `${process.env.NEXT_PUBLIC_FETCH_BASEURL}/products/${targetUrl}`
+      `${process.env.NEXT_PUBLIC_FETCH_BASEURL}/products/${targetUrl}`,
     );
   };
 
@@ -62,7 +62,7 @@ export async function getServerSideProps({ params }) {
   //`${NEXT_PUBLIC_FETCH_BASEURL}/api/v1/products/${params.id}}`
   try {
     const result = await axios.get(
-      `${process.env.NEXT_PUBLIC_FETCH_BASEURL}/api/v1/products`
+      `${process.env.NEXT_PUBLIC_FETCH_BASEURL}/api/v1/products`,
     );
     if (result.status === 200) {
       return {
@@ -83,14 +83,14 @@ export async function getServerSideProps({ params }) {
     }
   } catch (err) {
     console.error(err.response);
-    const statusCode = err.response ? err.response.status : "에러발생";
+    const statusCode = err.response ? err.response.status : '에러발생';
     console.error(err.response);
     return {
       props: {
         product: null,
         error: {
           statusCode,
-          title: err.response ? err.response.status : "에러발생",
+          title: err.response ? err.response.status : '에러발생',
         },
       },
     };

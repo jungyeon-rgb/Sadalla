@@ -1,4 +1,4 @@
-import handleOrderSubmit from "./index";
+import handleOrderSubmit from './index';
 
 export default function OrderCompletedList() {
   return (

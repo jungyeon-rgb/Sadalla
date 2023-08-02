@@ -1,14 +1,14 @@
-import ReactMarkdown from "react-markdown";
-import classes from "./ProductContent.styles";
-import ProductHeader from "@/components/Products/ProductContent/ProductContentHeader/ProductContentHeader";
+import ReactMarkdown from 'react-markdown';
+import classes from './ProductContent.styles';
+import ProductHeader from '@/components/Products/ProductContent/ProductContentHeader/ProductContentHeader';
 import {
   ProductContentContainer,
   ProductContentMain,
   ProductContentToCartButton,
   ProductContentCountInput,
   ProductContentButtonContainer,
-} from "@/components/Products/ProductContent/ProductContent.styles";
-import Image from "next/image";
+} from '@/components/Products/ProductContent/ProductContent.styles';
+import Image from 'next/image';
 export default function ProductContent(props) {
   const { id, company, title, content, price, image } = props;
   return (

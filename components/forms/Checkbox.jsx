@@ -1,5 +1,5 @@
 // {name, label, value, onChange, checked}
-import { useState } from "react";
+import { useState } from 'react';
 
 export default function Checkbox() {
   const [checked, setChecked] = useState(true);

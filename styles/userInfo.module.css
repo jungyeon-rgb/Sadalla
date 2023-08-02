@@ -1,36 +1,35 @@
-
-.renewInfo{
-    font-size: 30px;
-    margin: 40px 0 20px 28%;
+.renewInfo {
+  font-size: 30px;
+  margin: 40px 0 20px 28%;
 }
 
-.userInfoWarp{
-    width: 800px;
-    margin-left: 28%;
+.userInfoWarp {
+  width: 800px;
+  margin-left: 28%;
 }
 
-.userInfoView{
-    font-size: 20px;
-    border-bottom: 1px solid #000;
-    padding-bottom: 10px;
-    margin-bottom: 50px;
+.userInfoView {
+  font-size: 20px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
 }
 
-.renewUserInfo{
-    border: 1px solid #000;
-    margin-bottom: 50px;
+.renewUserInfo {
+  border: 1px solid #000;
+  margin-bottom: 50px;
 }
 
-.userAgree{
-    border: 1px solid #000;
-    margin-bottom: 50px;
+.userAgree {
+  border: 1px solid #000;
+  margin-bottom: 50px;
 }
 
-.deletUser{
-    display: flex;
-    justify-content: center;
+.deletUser {
+  display: flex;
+  justify-content: center;
 }
 
-.button{
-    margin-left: 43%;
+.button {
+  margin-left: 43%;
 }

@@ -32,7 +32,7 @@ export default function OrderList() {
 
   function handleDelete() {
     const newCartItems = cartItems.filter(
-      (item) => !selectedIds.includes(item.id.toString())
+      (item) => !selectedIds.includes(item.id.toString()),
     );
     setCartItems(newCartItems);
     setSelectedIds([]);
